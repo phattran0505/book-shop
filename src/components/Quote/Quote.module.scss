@@ -1,0 +1,33 @@
+.quote-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 150px 0;
+  background-color: var(--light-color);
+  .sub-title {
+    width: 50%;
+    text-align: center;
+
+    img {
+      margin-bottom: 50px;
+    }
+    h4 {
+      color: var(--dark-color);
+      line-height: 2;
+      margin-bottom: 20px;
+      text-transform: none;
+    }
+    p {
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .quote-container {
+    .sub-title {
+      width: 80%;
+    }
+  }
+}

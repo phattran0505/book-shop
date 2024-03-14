@@ -1,0 +1,36 @@
+.book-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+  gap: 24px;
+  animation: appear forwards 400ms ease;
+  .book-img {
+    background-color: var(--light-color);
+    img {
+      width: 100%;
+    }
+  }
+
+  .book-content {
+    text-align: center;
+    .book-writer {
+      font-size: 12px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .book-price {
+      color: tomato;
+    }
+  }
+}
+
+@keyframes appear {
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
